@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface dados_populacao {
+public interface programa5 {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         String str_lista = sc.nextLine();                       // input
@@ -15,12 +15,12 @@ public interface dados_populacao {
             lista_nums.add(num);                                 // add na lista vazia
             soma += num;                                         // calculando a soma
         }
-
-        float media = soma / str_lista.length();                 // calculo media
+        
+        float media = soma / new_lista.length;                 // calculo media 
         StringBuilder result = new StringBuilder();
         boolean cond = true;
 
-        for (int j = 0; j < lista_nums.size(); j++) {
+        for (int j = 0; j < new_lista.length; j++) {
             if (lista_nums.get(j) > media) {
                 if (cond == true) {
                     result.append(lista_nums.get(j));
