@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class programa7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            String aluno = sc.nextLine();
+            if 
+
+
+            String nota_str = aluno[1];
+            int nota = Integer.parseInt(nota_str);
+
+
+
+    }
+}
