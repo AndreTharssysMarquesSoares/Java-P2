@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-public interface programa5 {
+public interface acima_da_media {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         String str_lista = sc.nextLine();                       // input
