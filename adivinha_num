@@ -1,0 +1,27 @@
+/**
+ * Laboratório de Programação 2 - Lab 1
+ * 
+ * @author André TharssysMarques Soares - 123110543
+ */
+
+ import java.util.Scanner;
+
+public class adivinha_num {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num_secret = sc.nextInt();
+
+        while (true) {
+            int num_tentativa = sc.nextInt();
+            if (num_secret > num_tentativa) {
+                System.out.println("MENOR");
+            } else if (num_secret < num_tentativa) {
+                System.out.println("MAIOR");
+            } else {
+                System.out.println("ACERTOU");
+                break;
+            }
+        }
+        sc.close();
+    }
+}
