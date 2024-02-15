@@ -1,0 +1,35 @@
+/**
+ * Laboratório de Programação 2 - Lab 1
+ * 
+ * @author André TharssysMarques Soares - 123110543
+ */
+
+import java.util.Scanner;
+
+public class plano_voo {
+    public static void main (String [] Args) {
+        Scanner sc = new Scanner(System.in);
+        int altura_ideal = sc.nextInt();
+        int altura_atual = sc.nextInt();
+        int limite = Math.abs(altura_ideal - altura_atual);
+
+        while (true) {
+
+            int nova_altura = sc.nextInt();
+
+             if (nova_altura == altura_ideal) {
+                System.out.println("OK");
+                break;
+            }
+            
+            if (Math.abs(nova_altura - altura_ideal) < limite) {
+                System.out.println("ADEQUADO");
+            } else if (Math.abs(nova_altura - altura_ideal) >= limite) {
+                System.out.println("PERIGO");
+            }
+
+            limite = Math.abs(nova_altura - altura_ideal);
+        }
+        sc.close();
+    }
+}
