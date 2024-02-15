@@ -1,0 +1,30 @@
+/**
+ * Laboratório de Programação 2 - Lab 1
+ * 
+ * @author André TharssysMarques Soares - 123110543
+ */
+
+import java.util.Scanner;
+
+public class maiores_gastos {
+    public static void main (String [] args) {
+        Scanner sc = new Scanner(System.in);
+        String[] lista_gastos = sc.nextLine().split(" ");
+        int maior_gasto = 0;
+        int segundo_maior_gasto = 0;
+
+        for (int i = 0; i < lista_gastos.length; i++) {
+            int numero = Integer.parseInt(lista_gastos[i]);
+
+            if (numero > maior_gasto) {
+                segundo_maior_gasto = maior_gasto;
+                maior_gasto = numero;
+
+            } else if (numero > segundo_maior_gasto) {
+                segundo_maior_gasto = numero;
+            }
+        }
+        System.out.println(maior_gasto + segundo_maior_gasto);
+        sc.close();
+    }
+}
